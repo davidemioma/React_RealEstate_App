@@ -1,0 +1,40 @@
+.container {
+  width: 80%;
+  overflow: hidden;
+}
+
+.images {
+  width: 500px;
+  height: 300px;
+}
+
+@media screen and (min-width: 600px) {
+  .images {
+    width: 1000px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .images {
+    width: 1500px;
+    height: 400px;
+  }
+}
+
+.iconLeft,
+.iconRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.iconLeft {
+  margin-right: 0.5rem;
+}
+
+.iconRight {
+  margin-left: 0.5rem;
+}
