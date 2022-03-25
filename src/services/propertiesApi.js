@@ -1,11 +1,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const propertiesApiHeaders = {
-  "X-RapidAPI-Host": "bayut.p.rapidapi.com",
-  "X-RapidAPI-Key": "ddbe6b5c46msh616d4f44791a9efp18f45ajsn4257b7e83b18",
+  "X-RapidAPI-Host": process.env.REACT_APP_PROPERTIES_RAPIDAPI_HOST,
+  "X-RapidAPI-Key": process.env.REACT_APP_RAPIDAPI_KEY,
 };
 
-const baseUrl = "https://bayut.p.rapidapi.com";
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 const createRequest = (url) => ({ url, headers: propertiesApiHeaders });
 
